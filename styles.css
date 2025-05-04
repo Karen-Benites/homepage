@@ -32,7 +32,7 @@ body {
 .fv {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .resume {
@@ -178,8 +178,8 @@ body {
 
 .experiences__company-header-durability {
     color: var(--durability-text-color);
-    text-align: left;
     margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
 }
 
@@ -220,12 +220,16 @@ body {
 }
 
 .additional-info__education {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
+    margin-bottom: 20px;
+}
+
+.additional-info__education-university{
     margin-bottom: 20px;
 }
 
@@ -247,6 +251,7 @@ body {
 }
 
 .additional-info__languages {
+    margin-top: 8px;
     margin-bottom: 20px;
 }
 
