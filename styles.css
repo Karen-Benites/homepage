@@ -156,8 +156,12 @@ body {
 }
 
 .skills__text {
-    color: var(--secondary-text-color);
     text-align: justify;
+}
+
+.skills ul {
+    padding-left: 32px;
+    color: var(--secondary-text-color);
 }
 
 /* Experience and additional info styles */
