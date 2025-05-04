@@ -1,4 +1,5 @@
 /* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +7,18 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Helvetica, sans-serif;
     line-height: 1.5;
 
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #FBCAEF;
+    --text-decoration-color:  #6C63FF;
 }
+
+
 
 .container {
     margin: 0 auto;
@@ -37,8 +40,8 @@ body {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    border: 1px solid #FBCAEF;
+    box-shadow: 1px 1px 7px 7px #FBCAEF;
     padding: 30px 0;
     max-width: 900px;
 }
@@ -75,6 +78,11 @@ body {
 
 .contact-info__block--center {
     justify-content: center;
+    align-items: center;
+}
+
+.contact_info_container{
+    align-items: center;
 }
 
 .contact-info__item {
@@ -148,7 +156,7 @@ body {
 
 .skills__subheader{
     color: var(--primary-text-color);
-    margin-top: 8px;
+    margin-top: 20px;
     margin-bottom: 12px;
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
@@ -223,7 +231,7 @@ body {
     margin-bottom: 32px;
 }
 
-.additional-info__education-header {
+.additional-info__education-header, .hobbies__header {
     color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 20px;
@@ -250,9 +258,9 @@ body {
     color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
+.additional-info__languages, .hobbies {
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .additional-info__languages-header {
@@ -261,7 +269,7 @@ body {
     margin-bottom: 20px;
 }
 
-.additional-info__languages-item {
+.additional-info__languages-item, .hobbies-item {
     color: var(--secondary-text-color);
 }
 
