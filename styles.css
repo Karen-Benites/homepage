@@ -199,6 +199,7 @@ body {
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
     padding-left: 20px;
+    margin-bottom: 12px;
 }
 
 .additional-info {
