@@ -146,6 +146,15 @@ body {
     margin-bottom: 15px;
 }
 
+.skills__subheader{
+    color: var(--primary-text-color);
+    margin-top: 8px;
+    margin-bottom: 12px;
+    text-decoration-color: var(--text-decoration-color);
+    text-decoration-line: underline;
+    text-align: left;
+}
+
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
