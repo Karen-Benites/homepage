@@ -36,6 +36,28 @@ body {
     max-width: 900px;
 }
 
+.theme__icons{
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.theme__icons:hover{
+    transform: scale(1.15);
+    transition: all ease 200ms;
+}
+
+.theme__icon-light{
+    display: none;
+}
+
 .fh {
     display: flex;
     flex-direction: row;
@@ -117,7 +139,7 @@ body {
     justify-content: center;
 }
 
-.contact-info__item-icon path {
+.contact-info__item-icon path, .theme__icon path {
     fill: var(--icon-color);
 }
 
@@ -331,7 +353,8 @@ body {
     color: var(--dark-durability-text-color);
 }
 
-.dark-theme .contact-info__item-icon path {
+.dark-theme .contact-info__item-icon path,
+.dark-theme .theme__icon path {
     fill: var(--dark-icon-color);
 }
 
