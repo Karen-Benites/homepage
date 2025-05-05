@@ -16,7 +16,7 @@ body {
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
     --border-color: #FBCAEF;
-    --resume-border-color: rgba(194, 195, 214, 0.50); 
+    --resume-border-color: rgba(194, 195, 214, 0.50);
     --text-decoration-color: #6C63FF;
 
     /* dark theme */
@@ -36,7 +36,7 @@ body {
     max-width: 900px;
 }
 
-.theme__icons{
+.theme__icons {
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -49,12 +49,12 @@ body {
     cursor: pointer;
 }
 
-.theme__icons:hover{
+.theme__icons:hover {
     transform: scale(1.15);
     transition: all ease 200ms;
 }
 
-.theme__icon-light{
+.theme__icon-light {
     display: none;
 }
 
@@ -139,7 +139,13 @@ body {
     justify-content: center;
 }
 
-.contact-info__item-icon path, .theme__icon path {
+.contact-info__item-icon:hover{
+    transform: scale(1.15);
+    transition: all ease 200ms;
+}
+
+.contact-info__item-icon path,
+.theme__icon path {
     fill: var(--icon-color);
 }
 
@@ -369,12 +375,20 @@ body {
     text-decoration-color: var(--dark-text-decoration-color);
 }
 
-.dark-theme .contact-info__avatar{
+.dark-theme .contact-info__avatar {
     border-color: var(--dark-text-decoration-color);
 }
 
 .dark-theme .intro__icon path {
     fill: var(--dark-text-decoration-color);
+}
+
+body.dark-theme .theme__icon-dark {
+    display: none;
+}
+
+body.dark-theme .theme__icon-light {
+    display: inline-block;
 }
 
 @media screen and (max-width: 576px) {
